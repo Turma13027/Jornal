@@ -139,6 +139,17 @@ main {
     font-size: 1em;
 }
 
+.Livro {
+    display: flex;
+    flex-direction: column;
+}
+
+.Livro > .Imagem {
+    width: 50%;
+    height: auto;
+    margin: auto;
+}
+
 #Entrevista {
     margin: 1em 0;
     height: auto;
@@ -243,9 +254,19 @@ footer {
         width: 100%;
     }
 
-    #Livro > .Texto > h1 {
+    .Livro {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Livro > .Texto > h1 {
         margin-bottom: 0;
     }
+
+    .Livro > .Imagem {
+        width: 100%;
+    }
+
     .Texto > h2 {
         text-align: center;
         margin-top: 1em;
