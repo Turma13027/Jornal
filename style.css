@@ -178,7 +178,7 @@ iframe {
 }
 
 #Integrantes > img {
-    width: 45%;
+    width: 45vw;
     height: auto;
     border-radius: 1em;
 }
@@ -295,6 +295,7 @@ footer {
 
     #Integrantes > img {
         width: 100%;
+        height: auto;
     }
 
     #LogoRedesSociais{
