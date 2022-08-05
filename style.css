@@ -66,6 +66,7 @@ main {
 .Conteudo, .Noticia, .Individual {
     display: flex;
     gap: 1.5em;
+    align-items: center;
 }
 
 .Individual {
@@ -167,6 +168,19 @@ iframe {
     margin-top: 2em;
     height: 75vh;
     border-radius: 1.4em;
+}
+
+#Integrantes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#Integrantes > img {
+    width: 45%;
+    height: auto;
+    border-radius: 1em;
 }
 
 footer {
@@ -271,12 +285,18 @@ footer {
         text-align: center;
         margin-top: 1em;
     }
+
     iframe {
         margin-top: 2em;
         width: 100%;
         height: 35vh;
         border-radius: 1.4em;
     }
+
+    #Integrantes > img {
+        width: 100%;
+    }
+
     #LogoRedesSociais{
         flex-direction: column;
         margin-bottom: 1em;
