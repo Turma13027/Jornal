@@ -10,11 +10,23 @@ html {
     background-repeat: no-repeat;
     height: fit-content;
     margin: auto;
+    scroll-behavior: smooth;
 }
 
 h1 {
     text-align: center;
     font-size: 2.5em;
+}
+
+#InícioBotão{
+    background: #468aff;
+    width: 2em;
+    height: 2em;
+    padding: .5em;
+    border-radius: 100%;
+    position: fixed;
+    top:80%;
+    right: 2%;
 }
 
 p {
