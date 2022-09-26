@@ -19,7 +19,8 @@ h1 {
 }
 
 #InícioBotão{
-    background: #468aff;
+    background: #162d56;
+    border: 1.5px solid white;
     width: 2em;
     height: 2em;
     padding: .5em;
@@ -280,15 +281,26 @@ footer {
 /* Adaptação para telas menores */
 
 button:focus ~ ul{
-    display: flex;
+    left: 0%;
     background-color: #091222;
 }
 
 @media only screen and (max-width: 850px) {
     ul{
+        padding: 0;
+        text-align: left;
         flex-direction: column;
-        width: 90vw;
-        display: none;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        left: -100%;
+        top: 0%;
+        transition: all .5s;
+    }
+    li{
+        width: 100%;
     }
     button{
         display: flex;
