@@ -29,6 +29,11 @@ h1 {
     right: 2.5%;
 }
 
+#InícioBotão:hover{
+    width: 2.15em;
+    height: 2.15em;
+}
+
 p {
     font-size: 1.25em;
 }
@@ -53,6 +58,35 @@ header {
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 4em;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: none;
+}
+
+ul{
+    display: flex;
+    gap: 1.5em;
+    text-align: center;
+}
+
+li{
+    text-align: center;
+    list-style: none;
+    font-size: 1.25em;
+    padding: 1em;
+}
+
+li:hover,button:hover{
+    background-color: #283853;
+    cursor: pointer;
 }
 
 #LogoSubtitulos {
@@ -244,6 +278,22 @@ footer {
 }
 
 /* Adaptação para telas menores */
+
+button:focus ~ ul{
+    display: flex;
+    background-color: #091222;
+}
+
+@media only screen and (max-width: 850px) {
+    ul{
+        flex-direction: column;
+        width: 90vw;
+        display: none;
+    }
+    button{
+        display: flex;
+    }
+}
 
 @media only screen and (max-width: 650px) {
     main {
